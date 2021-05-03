@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -43,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     mButtonTop.setText(R.string.T3_Ans1);
                     mButtonBottom.setText(R.string.T3_Ans2);
                 }else /*if(mDestiniProgress==2 && mTopButtonTapCount==2 && mBottomButtonTapCount==1)*/{
-                    Toast.makeText(getApplicationContext(), "Last level reached !", Toast.LENGTH_SHORT).show();
+//                    Toast.makeText(getApplicationContext(), "Last level reached !", Toast.LENGTH_SHORT).show();
                     mStoryTextView.setText(R.string.T6_End);
                     mButtonTop.setVisibility(View.GONE);
                     mButtonBottom.setVisibility(View.GONE);
